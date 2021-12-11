@@ -1,3 +1,0 @@
-# teesst
-# Aaloyme
-# Aaloyme
