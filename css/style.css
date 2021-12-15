@@ -66,9 +66,7 @@
    font-size: 0.9rem;
 }
 
-.btn-sec1:hover {
-    background: radial-gradient(at top, #ffffa7, #ffd700);
-}
+.btn-sec1:hover {background: radial-gradient(at center, #ffffa7, #ffd700);}
 
 .transition {
     background-color: rgba(255, 255, 255, .8);
@@ -103,7 +101,12 @@ span1 {font-weight: normal;}
     flex-direction: column;
     width: 600px;
     margin-left: 125px;
-    margin-top: -65px;
+}
+
+.line-sec2 {
+    background-color: rgb(66,170, 255);
+    height: 4px;
+    width: 600px;
 }
 
 .title-sec2 {
@@ -117,6 +120,7 @@ span1 {font-weight: normal;}
    text-align: left;
    font-size: 17px;
    line-height: 40px;
+   margin-bottom: 37px;
 }
 
 
@@ -205,10 +209,21 @@ span1 {font-weight: normal;}
 
 .info-sec3 {
     position: absolute;
-    width: 285px;
-    height: 310px;
-    background-color: rgba(250, 250, 250, .93);
+    width: 50%;
+    height: 360px;
+    background-color: rgba(250, 250, 250, .9);
     padding: 25px 15px 25px 35px;
+    box-sizing: border-box;
+}
+
+.info-sec3::before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 167.5px;
+    border-top: solid 12.5px transparent;
+    border-bottom: solid 12.5px transparent;
+    border-left: solid 10px rgba(250, 250, 250, .9);
 }
 
 .img-sec3 {
@@ -233,7 +248,7 @@ span1 {font-weight: normal;}
 /*=====section-4======*/
 
 .sec4 {
-    background: linear-gradient(45deg, #a8d8ff, #0f93ff );
+    background: linear-gradient(225deg, #a8d8ff, #0f93ff );
     height: 840px;
     display: flex;
     flex-direction: column;
@@ -271,5 +286,62 @@ span1 {font-weight: normal;}
     margin-right: 10px;
 }
 
-.map-sec4 {margin-top: 30px;}
+.map-sec4 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
 
+.form-sec4 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.input1 {
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#textarea {
+    height: 150px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.btn-sec4 {
+    background-color: rgb(255, 255, 167);
+    padding: 18px 10px;
+    border-radius: 30px 30px;
+    border: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.btn-sec4:hover {background: radial-gradient(at center, #ffffa7, #ffd700);}
+
+.footer {
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614276862_7-p-chernii-fon-gradient-10.jpg);
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
