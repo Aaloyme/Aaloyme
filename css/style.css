@@ -78,6 +78,37 @@
 span {color: rgb(10, 40, 255);}
 span1 {font-weight: normal;}
 
+ @media screen and (max-width: 768px){
+    .h_list {
+        display: none;
+    }
+    
+    .title-sec1{
+        font-size: 3.6rem;
+    }
+    
+    .btn-sec1{
+       padding: 18px 30px;
+    }
+    
+    .transition {
+        width: 600px;
+    }
+ }
+
+ @media screen and (max-width: 680px){
+    
+    .title-sec1{
+        font-size: 3.5rem;
+    }
+   .par-sec1 {
+     font-size: 0.9rem;
+    }
+    .transition {
+        width: 550px;
+    }
+ }
+
 
 /*=====section-2======*/
 /*=====section-2======*/
@@ -123,6 +154,56 @@ span1 {font-weight: normal;}
    margin-bottom: 37px;
 }
 
+@media screen and (max-width: 768px){
+    .sec2 {
+        flex-direction: column;
+        justify-content: flex-start;
+     }
+     
+     .imgmalang {
+         height: 180px;
+         width: 350px;
+         margin-top: 45px;
+     }
+     
+     .info-sec2 {
+         margin-left: 0px;
+     }
+     
+     .title-sec2 {
+         margin-bottom: 20px;
+         text-align: center;
+     }
+     
+     .par-sec2 {
+        margin-bottom: 25px;
+     }
+}
+
+@media screen and (max-width: 680px){
+     .imgmalang {
+         height: 170px;
+         width: 340px;
+     }
+     
+     .info-sec2 {
+         width: 500px;
+     }
+     
+     .title-sec2 {
+         font-size: 3.5rem;
+     }
+     
+     .par-sec2 {
+        font-size: 0.9rem;
+        line-height: 30px;
+     }
+
+     .line-sec2 {
+        width: 500px;
+        height: 3px;
+    }
+}
 
 /*=====section-3======*/
 /*=====section-3======*/
@@ -170,6 +251,7 @@ span1 {font-weight: normal;}
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
+    justify-items: center;
 }
 
 .card-info1-sec3 {
@@ -240,6 +322,81 @@ span1 {font-weight: normal;}
 .in-info-sec3 {
     line-height: 35px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .sec3 {
+        height: 1820px;
+    }
+    
+    .dt-sec3 {
+        width: 0px;
+        margin: 40px 0px;
+    }
+    
+    .img-reg {
+      display: none;
+    }
+
+    .regulation {
+        display: none;
+    }
+    
+    .container-sec3 {
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .sec3 {
+        height: 1510px;
+    }
+    
+    .dt-sec3 {
+       margin: 20px 0px;
+    }
+
+    .title-sec3 {
+        font-size: 3.5rem;
+    }
+    
+    .card-info1-sec3 {
+        height: 300px;
+        width: 600px;
+    }
+    
+    .card-info2-sec3 {
+        height: 300px;
+        width: 600px;
+    }
+    .card-info3-sec3 {
+        height: 300px;
+        width: 600px;
+    }
+    .card-info4-sec3 {
+        height: 300px;
+        width: 600px;
+    }
+    
+    .info-sec3 {
+        height: 300px;
+        padding: 15px 5px 15px 25px;
+    }
+    
+    .info-sec3::before {
+        top: 137.5px;
+    }
+    
+    .img-sec3 {
+        height: 70px;
+        width: 120px;
+    }
+    
+    .in-info-sec3 {
+        line-height: 30px;
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -344,4 +501,38 @@ span1 {font-weight: normal;}
     height: 20px;
     width: 20px;
     margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .sec4 {
+        height: 810px;
+    }
+    .title-sec4 {
+        margin: 30px 0px;
+    }
+    .map-sec4 {
+       width: 650px;
+    }
+    .form-sec4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .sec4 {
+        height: 780px;
+    }
+    .title-sec4 {
+        font-size: 3.5rem;
+    }
+    .p-sec4 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    .map-sec4 {
+       width: 550px;
+    }
+    .form-sec4 {
+        display: none;
+    }
 }
